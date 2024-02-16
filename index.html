@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes MegaPage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="header">DOM Manipulation Notes</h1>
+      </div>
+      <div class="btn-container sub-container">
+        <button type="button" class="btn" id="query">
+          document.<span>querySelector(s)</span>
+        </button>
+        <button type="button" class="btn" id="create">
+          document.<span>createElement</span><br />
+          element.<span>appendChild</span><br />
+          element.<span>insertAdjacentHTML</span>
+        </button>
+        <button type="button" class="btn" id="innerText">
+          element.<span>innerText</span><br />element.<span>innerHTML</span>
+        </button>
+        <button type="button" class="btn" id="hasAttribute">
+          element.<span>hasAttribute</span><br />
+          element.<span>setAttribute</span><br />
+          element.<span>getAttribute</span>
+        </button>
+        <button type="button" class="btn" id="classList">
+          element.<span>classList</span><br />
+          element.<span>dataset</span><br />
+          element.<span>style</span><br />
+          element.<span>href</span>
+        </button>
+        <button type="button" class="btn" id="eventListener">
+          element.<span>addEventListener</span><br />
+        </button>
+        <button type="button" class="btn" id="timeout">
+          <span
+            >setTimeout<br />clearTimeout<br />setInterval<br />clearInterval</span
+          >
+        </button>
+      </div>
+
+      <div class="sub-container hidden" id="DOMInfo">
+        <div class="subheader">What is DOM Manipulation?</div>
+        <div class="DOMInfo-Text">
+          The Document Object Model (DOM) refers to a way to represent a
+          document, or a web page, within a programming language, typically
+          JavaScript. This allows you to access the styling, structure, or
+          content of a document, updating it with the use of logic you couldnt
+          get otherwise. <br /><br />
+          This information is modeled as an Object, hence the name, converting
+          the contents of the documents into values that are able to be
+          manipulated using variables and methods.
+        </div>
+        <button class="reset-btn">Back</button>
+      </div>
+      <div class="sub-container hidden" id="querySelector">
+        <div class="subheader">document.querySelector(e)</div>
+        <div class="queryText"></div>
+        <button class="reset-btn">Back</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
